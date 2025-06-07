@@ -1,15 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import sum from '@/test';
 import router from './router';
 import {RouterProvider} from 'react-router-dom'
 import store from './store';
 import { Provider} from 'react-redux'
 import '@/theme.css'
-const results=sum(1,2)
-console.log(results);
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>

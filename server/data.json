@@ -1,39 +1,110 @@
 {
   "ka":[
-    {
-      "type":"pay",
-      "money":-99,
-      "date":"2022-10-24 10:36:42",
-      "useFor":"drinks",
-      "id":1
-    },
-    {
-      "type":"pay",
-      "money":-88,
-      "date":"2022-10-24 10:36:42",
-      "useFor":"drinks",
-      "id":2
-    },
-    {
-      "type":"income",
-      "money":100,
-      "date":"2022-10-24 10:36:42",
-      "useFor":"bonus",
-      "id":3
-    },
-    {
-      "type":"pay",
-      "money":-88,
-      "date":"2022-10-24 10:36:42",
-      "useFor":"drinks",
-      "id":4
-    },
-    {
-      "type":"pay",
-      "money":-88,
-      "date":"2022-10-24 10:36:42",
-      "useFor":"drinks",
-      "id":5
-    }
-  ]
+  {
+    "type": "pay",
+    "money": -50,
+    "date": "2021-12-15 14:22:00",
+    "useFor": "snack",
+    "id": "6"
+  },
+  {
+    "type": "income",
+    "money": 300,
+    "date": "2022-01-05 09:00:00",
+    "useFor": "salary",
+    "id": "7"
+  },
+  {
+    "type": "pay",
+    "money": -120,
+    "date": "2022-01-17 13:15:00",
+    "useFor": "shopping",
+    "id": "8"
+  },
+  {
+    "type": "pay",
+    "money": -200,
+    "date": "2022-03-21 10:00:00",
+    "useFor": "rent",
+    "id": "9"
+  },
+  {
+    "type": "income",
+    "money": 500,
+    "date": "2022-04-01 12:00:00",
+    "useFor": "freelance",
+    "id": "10"
+  },
+  {
+    "type": "pay",
+    "money": -70,
+    "date": "2022-04-10 18:20:00",
+    "useFor": "transport",
+    "id": "11"
+  },
+  {
+    "type": "pay",
+    "money": -60,
+    "date": "2023-06-11 16:45:00",
+    "useFor": "snack",
+    "id": "12"
+  },
+  {
+    "type": "income",
+    "money": 800,
+    "date": "2023-07-01 10:10:00",
+    "useFor": "salary",
+    "id": "13"
+  },
+  {
+    "type": "pay",
+    "money": -150,
+    "date": "2023-07-15 09:30:00",
+    "useFor": "shopping",
+    "id": "14"
+  },
+  {
+    "type": "pay",
+    "money": -88,
+    "date": "2024-08-20 19:10:00",
+    "useFor": "drinks",
+    "id": "15"
+  },
+  {
+    "type": "income",
+    "money": 1200,
+    "date": "2024-09-01 08:30:00",
+    "useFor": "bonus",
+    "id": "16"
+  },
+  {
+    "type": "pay",
+    "money": -300,
+    "date": "2024-09-05 17:00:00",
+    "useFor": "rent",
+    "id": "17"
+  },
+  {
+    "type": "pay",
+    "money": -99,
+    "date": "2025-06-01 11:15:00",
+    "useFor": "drinks",
+    "id": "18"
+  },
+  {
+    "type": "income",
+    "money": 1000,
+    "date": "2025-06-01 10:00:00",
+    "useFor": "salary",
+    "id": "19"
+  },
+  {
+    "type": "pay",
+    "money": -20,
+    "date": "2025-06-06 08:30:00",
+    "useFor": "coffee",
+    "id": "20"
+  }
+]
+
 }
