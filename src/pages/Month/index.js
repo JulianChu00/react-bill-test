@@ -1,6 +1,6 @@
 import { NavBar, DatePicker } from 'antd-mobile'
 import './index.scss'
-import { useState,useMemo } from 'react'
+import { useState,useMemo,useEffect } from 'react'
 import dayjs from 'dayjs'
 import { useSelector } from 'react-redux'
 import _ from 'lodash'
@@ -39,6 +39,12 @@ const Month = () => {
   const [currentDate,setCurrentDate]=useState(()=>{
     return dayjs().format('YYYY-MM')
   })
+  useEffect(()=>{
+    const formatDate=dayjs().format('YYYY-MM')
+    if(monthGroup[formatDate]) {
+      setMonthList(monthGroup[formatDate])
+    }
+  },[monthGroup])
   return (
     <div className="monthlyBill">
       <NavBar className="nav" backArrow={false}>
