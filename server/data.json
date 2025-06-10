@@ -1,110 +1,34 @@
 {
-  "ka":[
-  {
-    "type": "pay",
-    "money": -50,
-    "date": "2021-12-15 14:22:00",
-    "useFor": "snack",
-    "id": "6"
-  },
-  {
-    "type": "income",
-    "money": 300,
-    "date": "2022-01-05 09:00:00",
-    "useFor": "salary",
-    "id": "7"
-  },
-  {
-    "type": "pay",
-    "money": -120,
-    "date": "2022-01-17 13:15:00",
-    "useFor": "shopping",
-    "id": "8"
-  },
-  {
-    "type": "pay",
-    "money": -200,
-    "date": "2022-03-21 10:00:00",
-    "useFor": "rent",
-    "id": "9"
-  },
-  {
-    "type": "income",
-    "money": 500,
-    "date": "2022-04-01 12:00:00",
-    "useFor": "freelance",
-    "id": "10"
-  },
-  {
-    "type": "pay",
-    "money": -70,
-    "date": "2022-04-10 18:20:00",
-    "useFor": "transport",
-    "id": "11"
-  },
-  {
-    "type": "pay",
-    "money": -60,
-    "date": "2023-06-11 16:45:00",
-    "useFor": "snack",
-    "id": "12"
-  },
-  {
-    "type": "income",
-    "money": 800,
-    "date": "2023-07-01 10:10:00",
-    "useFor": "salary",
-    "id": "13"
-  },
-  {
-    "type": "pay",
-    "money": -150,
-    "date": "2023-07-15 09:30:00",
-    "useFor": "shopping",
-    "id": "14"
-  },
-  {
-    "type": "pay",
-    "money": -88,
-    "date": "2024-08-20 19:10:00",
-    "useFor": "drinks",
-    "id": "15"
-  },
-  {
-    "type": "income",
-    "money": 1200,
-    "date": "2024-09-01 08:30:00",
-    "useFor": "bonus",
-    "id": "16"
-  },
-  {
-    "type": "pay",
-    "money": -300,
-    "date": "2024-09-05 17:00:00",
-    "useFor": "rent",
-    "id": "17"
-  },
-  {
-    "type": "pay",
-    "money": -99,
-    "date": "2025-06-01 11:15:00",
-    "useFor": "drinks",
-    "id": "18"
-  },
-  {
-    "type": "income",
-    "money": 1000,
-    "date": "2025-06-01 10:00:00",
-    "useFor": "salary",
-    "id": "19"
-  },
-  {
-    "type": "pay",
-    "money": -20,
-    "date": "2025-06-06 08:30:00",
-    "useFor": "coffee",
-    "id": "20"
-  }
-]
-
+  "ka": [
+    {"type":"pay","money":-40,"date":"2025-01-05 10:00:00","useFor":"dessert","id":"3001"},
+    {"type":"income","money":1200,"date":"2025-01-10 09:00:00","useFor":"salary","id":"3002"},
+    {"type":"pay","money":-75,"date":"2025-01-15 14:00:00","useFor":"clothes","id":"3003"},
+    {"type":"pay","money":-50,"date":"2025-02-01 18:00:00","useFor":"taxi","id":"3004"},
+    {"type":"income","money":500,"date":"2025-02-03 08:30:00","useFor":"overtimepay","id":"3005"},
+    {"type":"pay","money":-30,"date":"2025-02-10 20:00:00","useFor":"drinks","id":"3006"},
+    {"type":"pay","money":-90,"date":"2025-02-20 11:00:00","useFor":"home","id":"3007"},
+    {"type":"income","money":1500,"date":"2025-03-05 09:00:00","useFor":"salary","id":"3008"},
+    {"type":"pay","money":-45,"date":"2025-03-10 16:00:00","useFor":"dessert","id":"3009"},
+    {"type":"pay","money":-60,"date":"2025-03-15 13:30:00","useFor":"taxi","id":"3010"},
+    {"type":"income","money":400,"date":"2025-03-20 10:00:00","useFor":"financial","id":"3011"},
+    {"type":"pay","money":-55,"date":"2025-04-01 12:00:00","useFor":"bag","id":"3012"},
+    {"type":"pay","money":-70,"date":"2025-04-05 19:00:00","useFor":"bodybuilding","id":"3013"},
+    {"type":"income","money":800,"date":"2025-04-10 08:00:00","useFor":"salary","id":"3014"},
+    {"type":"pay","money":-35,"date":"2025-04-15 14:30:00","useFor":"dessert","id":"3015"},
+    {"type":"pay","money":-100,"date":"2025-04-20 17:00:00","useFor":"clothes","id":"3016"},
+    {"type":"income","money":300,"date":"2025-05-01 09:00:00","useFor":"cashgift","id":"3017"},
+    {"type":"pay","money":-80,"date":"2025-05-05 15:00:00","useFor":"promote","id":"3018"},
+    {"type":"pay","money":-65,"date":"2025-05-10 10:00:00","useFor":"game","id":"3019"},
+    {"type":"income","money":700,"date":"2025-05-15 11:00:00","useFor":"overtimepay","id":"3020"},
+    {"type":"pay","money":-130,"date":"2025-05-20 18:00:00","useFor":"home","id":"3021"},
+    {"type":"pay","money":-60,"date":"2025-05-25 13:00:00","useFor":"community","id":"3022"},
+    {"type":"income","money":1100,"date":"2025-06-01 09:00:00","useFor":"salary","id":"3023"},
+    {"type":"pay","money":-99,"date":"2025-06-01 11:00:00","useFor":"drinks","id":"3024"},
+    {"type":"pay","money":-20,"date":"2025-06-05 08:30:00","useFor":"dessert","id":"3025"},
+    {"type":"pay","money":-60,"date":"2025-06-07 10:15:00","useFor":"taxi","id":"3026"},
+    {"type":"income","money":400,"date":"2025-06-09 13:00:00","useFor":"financial","id":"3027"},
+    {"type":"pay","money":-30,"date":"2025-06-09 16:00:00","useFor":"dessert","id":"3028"},
+    {"type":"income","money":1000,"date":"2025-06-10 10:00:00","useFor":"salary","id":"3029"},
+    {"type":"pay","money":-99,"date":"2025-06-10 11:15:00","useFor":"drinks","id":"3030"}
+  ]
 }
