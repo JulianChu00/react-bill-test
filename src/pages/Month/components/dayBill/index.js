@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import {useMemo,useState} from 'react'
 import {billTypeToName} from '@/contents/index'
+import Icon from '@/components'
 import './index.scss'
 const DailyBill = ({date,billList}) => {
     const [dateVisible,setDateVisible]=useState(false)
@@ -46,6 +47,7 @@ const DailyBill = ({date,billList}) => {
         {billList.map(item => {
           return (
             <div className="bill" key={item.id}>
+              <Icon type={item.useFor}></Icon>
               <div className="detail">
                 <div className="billType">{billTypeToName[item.useFor]}</div>
               </div>
