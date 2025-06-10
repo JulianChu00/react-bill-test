@@ -1,8 +1,9 @@
 import classNames from 'classnames'
-import {useMemo} from 'react'
+import {useMemo,useState} from 'react'
 import {billTypeToName} from '@/contents/index'
 import './index.scss'
 const DailyBill = ({date,billList}) => {
+    const [dateVisible,setDateVisible]=useState(false)
     const dayResult = useMemo(() => {
     if (!Array.isArray(billList) || billList.length === 0) {
       return { pay: 0, income: 0, total: 0 }
@@ -24,7 +25,7 @@ const DailyBill = ({date,billList}) => {
       <div className="header">
         <div className="dateIcon">
           <span className="date">{date}</span>
-          <span className={'arrow'}></span>
+          <span className={dateVisible?'arrow expand' : 'arrow'} onClick={() => setDateVisible(!dateVisible)}></span>
         </div>
         <div className="oneLineOverview">
           <div className="pay">
@@ -41,7 +42,7 @@ const DailyBill = ({date,billList}) => {
           </div>
         </div>
       </div>
-      <div className="billList">
+      <div className="billList" style={{ display: dateVisible ? 'block' : 'none' }}>
         {billList.map(item => {
           return (
             <div className="bill" key={item.id}>
