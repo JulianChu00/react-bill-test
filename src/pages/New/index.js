@@ -5,10 +5,31 @@ import classNames from 'classnames'
 import { billListData } from '@/contents'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import dayjs from 'dayjs'
+import { addBillList } from '@/store/modules/billStore'
+import { useDispatch } from 'react-redux'
+import { nanoid } from 'nanoid'
 
 const New = () => {
   const navigate = useNavigate()
   const [billType,setBillType]=useState('pay')
+  const [money,setMoney]=useState(0)
+  const [useFor,setUseFor]=useState('')
+  const moneyChange=(value)=>{
+    setMoney(value)
+  }
+  const dispatch=useDispatch()
+  const saveBill=()=>{
+    const bill={
+      id: nanoid(),
+      type:billType,
+      money:billType=='pay'?-money:+money,
+      date:dayjs(new Date()).format('YYYY-MM-DD'),
+      useFor:useFor
+    }
+    dispatch(addBillList(bill))
+  }
+
   return (
     <div className="keepAccounts">
       <NavBar className="nav" onBack={() => navigate(-1)}
@@ -50,6 +71,8 @@ const New = () => {
                 className="input"
                 placeholder="0.00"
                 type="number"
+                value={money}
+                onChange={moneyChange}
               />
               <span className="iconYuan">¥</span>
             </div>
@@ -73,10 +96,12 @@ const New = () => {
                       key={item.type}
 
                     >
-                      <div className="icon">
+                      <div className="icon" onClick={()=>{
+                        setUseFor(item.type)
+                      }}>
                         <Icon type={item.type} />
                       </div>
-                      <div className="text">{item.name}</div>
+                        <div className="text">{item.name}</div>
                     </div>
                   )
                 })}
@@ -87,7 +112,7 @@ const New = () => {
       </div>
 
       <div className="btns">
-        <Button className="btn save">
+        <Button className="btn save" onClick={saveBill}>
           保 存
         </Button>
       </div>
