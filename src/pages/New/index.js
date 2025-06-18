@@ -19,17 +19,22 @@ const New = () => {
     setMoney(value)
   }
   const dispatch=useDispatch()
+  const [date,setDate]=useState('')
   const saveBill=()=>{
     const bill={
       id: nanoid(),
       type:billType,
       money:billType=='pay'?-money:+money,
-      date:dayjs(new Date()).format('YYYY-MM-DD'),
+      date:date,
       useFor:useFor
     }
     dispatch(addBillList(bill))
   }
+  const [dateVisible,setDateVisible]=useState(false)
 
+  const onConfirm=(date)=>{
+    setDate(dayjs(date).format('YYYY-MM-DD'))
+  }
   return (
     <div className="keepAccounts">
       <NavBar className="nav" onBack={() => navigate(-1)}
@@ -57,13 +62,23 @@ const New = () => {
 
         <div className="kaFormWrapper">
           <div className="kaForm">
-            <div className="date">
+            <div className="date" onClick={()=>{
+                setDateVisible(true)
+              }}>
               <Icon type="calendar" className="icon" />
-              <span className="text">{'今天'}</span>
+              <span className="text" >{date}</span>
               <DatePicker
                 className="kaDate"
                 title="记账日期"
                 max={new Date()}
+                visible={dateVisible}
+                onCancel={()=>{
+                  setDateVisible(false)
+                }}
+                onClose={()=>{
+                  setDateVisible(false)
+                }}
+                onConfirm={onConfirm}
               />
             </div>
             <div className="kaInput">
@@ -91,7 +106,7 @@ const New = () => {
                     <div
                       className={classNames(
                         'item',
-                        ''
+                        useFor===item.type?'selected':''
                       )}
                       key={item.type}
 

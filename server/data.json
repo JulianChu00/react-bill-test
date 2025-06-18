@@ -377,6 +377,62 @@
       "money": -1,
       "date": "2025-06-18",
       "useFor": "drinks"
+    },
+    {
+      "id": "RK_y9rPtSpJOUjMHKbxQp",
+      "type": "pay",
+      "money": -11110,
+      "date": "2025-06-18",
+      "useFor": "longdistance"
+    },
+    {
+      "id": "uLupM-YrCzkJnhuQoJ2EZ",
+      "type": "pay",
+      "money": -11110,
+      "date": "2025-06-18",
+      "useFor": "longdistance"
+    },
+    {
+      "id": "WhK2PQ99Nzkf2d-vx02nC",
+      "type": "pay",
+      "money": -11110,
+      "date": "2025-06-18",
+      "useFor": "longdistance"
+    },
+    {
+      "id": "tXRi-lmEbyZ5hKIUT_AD4",
+      "type": "pay",
+      "money": -11110,
+      "date": "2025-06-18",
+      "useFor": "longdistance"
+    },
+    {
+      "id": "HvK7r64csJ5YZxStC0OPz",
+      "type": "pay",
+      "money": -11110,
+      "date": "2025-06-18",
+      "useFor": "longdistance"
+    },
+    {
+      "id": "G2IqL9JPLMW02luwi7Itd",
+      "type": "pay",
+      "money": -10,
+      "date": "2025-06-18 15:57:17",
+      "useFor": "audio"
+    },
+    {
+      "id": "GY0NB4ki4arNWbWeE0lYF",
+      "type": "pay",
+      "money": -10,
+      "date": "2025-06-17",
+      "useFor": "food"
+    },
+    {
+      "id": "f3OgF4xBt3Z2Ri0bhqUXH",
+      "type": "pay",
+      "money": -10,
+      "date": "2025-06-15",
+      "useFor": "food"
     }
   ]
 }
